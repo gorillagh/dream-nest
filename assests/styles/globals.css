@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
 }
-
-h1 {
-  color: blue;
+.glass {
+  background: rgba(255, 255, 255, 0.56);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px); */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
-
-.btn {
-  background-color: blue;
-}
-
-.btn-primary {
+.container {
+  width: 70% !important;
+  margin: 0 auto !important;
 }
