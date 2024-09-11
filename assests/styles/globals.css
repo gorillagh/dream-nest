@@ -3,13 +3,23 @@
   padding: 0;
 }
 .glass {
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.8);
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  /* backdrop-filter: blur(9.6px);
-  -webkit-backdrop-filter: blur(9.6px); */
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px); 
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 .container {
-  width: 70% !important;
+  width: 80% !important;
   margin: 0 auto !important;
 }
+
+
+.nunito-text {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+
