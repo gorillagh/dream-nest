@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -12,6 +19,8 @@
             colors: {
               primary: {
                 DEFAULT: "#4285F4",
+                dark: "#1859c2",
+                light:"#4d8aec"
               },
             },
           },
@@ -25,7 +34,7 @@
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="transition ease-in-out delay-200 glass py-4 fixed top-0 w-full"
+      class="transition ease-in-out delay-200 glass py-4 fixed top-0 w-full z-40"
     >
       <div class="container flex justify-between">
         <div class="logo">
@@ -44,22 +53,133 @@
 
     <!-- hero section -->
     <div id="hero-section">
-      <div class="container">
-        <div data-aos="fade-right" class="grid grid-cols-2">
-          <div>
-            <h1>Make Your Talent More Profitable</h1>
-          </div>
-          <div data-aos="fade-left" class="">
-            <img class="" src="./assests/images/hero-img.svg" />
-          </div>
+      <!-- <div class="container"> -->
+      <div data-aos="fade-right" class="grid grid-cols-2">
+        <div
+          class="flex flex-col justify-center gap-10 items-center w-[80%] ml-auto"
+        >
+          <h1
+            class="hero-header text-5xl font-extrabold leading-snug nunito-text"
+          >
+            Make Your Talent More Profitable
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            assumenda ea quo cupiditate facere deleniti fuga officia.
+          </p>
+          <button
+            class="rounded-3xl py-3 px-5 font-semibold bg-primary text-white shadow-lg hover:shadow-2xl hover:bg-primary-dark"
+          >
+            Get Started
+          </button>
         </div>
+        <div data-aos="fade-left" class="">
+          <img class="" src="./assests/images/hero-img.svg" />
+        </div>
+
+        <!-- </div> -->
       </div>
     </div>
 
     <!-- feature section -->
+    <section id="features">
+      <div class="container">
+        <div class="features-header flex flex-col gap-4 text-center mt-20 mb-20 w-3/5 mx-auto">
+          <h2 class="text-3xl font-extrabold leading-snug nunito-text">
+            Dream Nest Features
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos
+            quaerat sapiente nam, id vero.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-8 gap-y-14">
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-arrows-rotate p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-arrows-rotate p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-basket-shopping p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-basket-shopping p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-basket-shopping p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="grid-item p-6 bg-[#F1F1F1] rounded-xl shadow-md">
+            <div class="relative text-center flex flex-col gap-y-4">
+              <div class="feature-icon ">
+                <i class="absolute -top-[65px] left-[40%] fa-solid fa-basket-shopping p-4 px-5 text-white text-3xl bg-primary rounded-full"></i>
+              </div>
+              <h4 class="text-xl font-medium nunito-text">Marketing Consulting</h4>
+              <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quis molestiae vitae eligendi at.
+              </p>
+              <a href="#" class="text-primary-light ">Learn More</a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
 
     <!-- Feature description section -->
 
+    <div class="h-[1000px]"></div>
     <!-- About section -->
 
     <!-- Our team section  -->
@@ -85,8 +205,8 @@
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
         easing: "ease", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
