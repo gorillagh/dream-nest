@@ -23,3 +23,28 @@
 }
 
 
+/* --------------Feature Description section-------------- */
+.feature1-container{
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.feature2-container{
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.section-header{
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.feature-testimony{
+  border:1px solid rgb(243, 232, 232);
+  border-left: 10px solid #4285F4;
+}
+
+
