@@ -47,4 +47,6 @@
   border-left: 10px solid #4285F4;
 }
 
-
+#about-section li span{
+margin-right: 10px;
+}
